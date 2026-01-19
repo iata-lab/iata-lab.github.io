@@ -1,36 +1,47 @@
-import './Home.css';
+import "./Home.css";
 
 const Home = () => {
   return (
     <section className="about-section">
       <article className="user-info">
         <div className="user-image">
-          <img src="./img/arman.jpg" alt="Arman Ghaziaskari Naeini" />
+          <img src="/img-1/foto-perfil-1.png" alt="Inigo Mata" />
         </div>
 
         <div className="user-text">
-          <h1>About Me</h1>
+          <h1>Sobre mi</h1>
           <p>
-            Hello! I'm a passionate technologist with a unique blend of skills in Data Science, Geographic Information Systems (GIS), and Web Development. I thrive on analyzing data to uncover meaningful patterns and insights, which I then transform into practical and innovative solutions.
+            ¡Hola! Soy un emprendedor, deportista y amante de los viajes que ha
+            explorado distintos caminos, lo que me ha dado una visión amplia del
+            mundo y de cómo se hacen los negocios en contextos diversos. ​
           </p>
           <p>
-            My journey into data analysis began with GIS and Remote Sensing, where I developed a strong foundation in interpreting and visualizing spatial data. This experience was further enriched through my deep dive into Data Science, equipping me with advanced tools and techniques for sophisticated analysis and predictive modeling. By combining these analytical skills with Web Development—particularly using JavaScript—I bring data-driven applications to life on the web.
+            Nunca he creído en encasillarme en una sola especialización,
+            encambio entender un poco de todo es clave para tener más
+            herramientas y tomar mejores decisiones en un mundo tan cambiante.
+            En esta última etapa estoy centrado en el desarrollo de negocio, la
+            internacionalización y la tecnología, buscando siempre ideas que
+            impulsen el cambio en nuestra industria.
           </p>
           <p>
-            What truly excites me is building interactive web applications that harness the power of data science to explore and present geographic information. I'm driven to create engaging tools that help organizations gain deeper insights, make informed decisions, and solve real-world challenges effectively.
+            Busco formar parte de una pequeña o mediana empresa en Bilbao con
+            planes de internacionalización, que valore una visión global,
+            digital y orientada a las personas para afrontar sus retos
+            comerciales y estratégicos.
           </p>
-          <div className="cv-buttons">
+          {/* Si quieres dejar aquí un cv en inglés pero no de */}
+          {/* <div className="cv-buttons">
             <a href="./pdfs/english.pdf" className="cv-button" target="_blank" rel="noopener noreferrer">
               English Curriculum
             </a>
             <a href="./pdfs/spanish.pdf" className="cv-button" target="_blank" rel="noopener noreferrer">
               Spanish Curriculum
             </a>
-          </div>
+          </div> */}
         </div>
       </article>
     </section>
   );
 };
 
-export default Home; 
+export default Home;

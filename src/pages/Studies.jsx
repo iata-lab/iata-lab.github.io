@@ -1,86 +1,108 @@
-import React from 'react';
-import { FaGraduationCap } from 'react-icons/fa';
-import './Studies.css';
+import React from "react";
+import { FaGraduationCap } from "react-icons/fa";
+import "./Studies.css";
 
 // Import university images
-import shahidBeheshtiImg from '../assets/img/shahid-beheshti.jpg';
-import isfahanTechImg from '../assets/img/isfahan-tech.jpg';
+import shahidBeheshtiImg from "../assets/img/shahid-beheshti.jpg";
+import isfahanTechImg from "../assets/img/isfahan-tech.jpg";
 
 const Studies = () => {
   const education = [
     {
-      degree: "Master's Degree in Geographic Information Systems and Remote Sensing",
-      year: "2004",
-      university: "Shahid Beheshti University, Tehran, Iran",
-      image: shahidBeheshtiImg
+      degree: "Master BEINT en Comercio Exterior",
+      year: "2021",
+      university:
+        "Universidad del País Vasco (UPV-EHU), Universidad de Deusto, Universidad Mondragon",
+      image: shahidBeheshtiImg,
     },
     {
-      degree: "Bachelor of Engineering in Rangeland and Watershed Management",
-      year: "2000",
-      university: "Isfahan University of Technology, Iran",
-      image: isfahanTechImg
-    }
+      degree: "Licenciatura en Administración y Dirección de Empresas",
+      year: "2009 - 2015",
+      university: "Universidad del País Vasco (UPV-EHU)",
+      image: shahidBeheshtiImg,
+    },
+    {
+      degree: " Bachiller y selectividad alemana (Abitur)",
+      year: "1994 - 2009",
+      university: "Colegio Alemán San Bonifacio Bilbao",
+      image: shahidBeheshtiImg,
+    },
   ];
 
   const training = [
     {
-      title: "Artificial Intelligence Specialist",
-      period: "Jun 2025 - Oct 2025",
-      provider: "Lanbide, EDE Fundazioa",
-      details: "230 hours"
-    },
-    {
-      title: "Web Development Bootcamp (Front-End)",
-      period: "Feb 2025 - Apr 2025",
+      title: "Web Development Bootcamp",
+      period: "2025",
       provider: "The Bridge Digital Talent",
-      details: "200 hours"
+      details: "480 horas",
     },
     {
-      title: "Data Science Bootcamp",
-      period: "Sep 2024 - Feb 2025",
-      provider: "The Bridge Digital Talent",
-      details: "480 hours"
+      title:
+        "Gestión contable, fiscal y laboral de pequeños negocios o microempresas",
+      period: "2019",
+      provider: "Formación Bultz-Lan",
+      details: "18 horas",
     },
     {
-      title: "Microcomputer Systems Assembly and Maintenance (Level 1)",
-      period: "May 2024 - Jul 2024",
-      provider: "Lanbide, IFAP (Basauri)",
-      details: "370 hours total (80 hours of internship remaining)"
+      title: "Bootcamp AllStartup",
+      period: "2019",
+      provider: "Demium Startups",
+      details: "18 horas",
     },
     {
-      title: "Business Intelligence: Data Modeling and Visualization with Excel and Power BI",
-      period: "2023",
-      provider: "Lanbide, IPARTEK SERVICIOS INFORMÁTICOS, SOC.COOP",
-      details: "60 hours"
+      title: "Técnicas de Machine Learning",
+      period: "2019",
+      provider: "Universidad de Mondragon - Carlos Cernuda",
+      details: "110 horas",
     },
     {
-      title: "Machine Learning and Predictive Analysis for Business 4.0",
-      period: "2023",
-      provider: "Lanbide, C2B-Campus to Business",
-      details: "30 hours"
+      title: "Certificado de Formación Específica en Iniciación a la Empresa",
+      period: "2016",
+      provider: "Universidad de Alcalá (UAH)",
+      details: "110 horas",
     },
     {
-      title: "Web scraping, website data extraction",
-      period: "2023",
-      provider: "Lanbide, C2B-Campus to Business",
-      details: "20 hours"
-    }
+      title: "Excel Avanzado y Gestión Financiera",
+      period: "2015",
+      provider: "Colegio Vasco de Economistas - Ekonomistak",
+      details: "40 horas",
+    },
+    {
+      title:
+        "Bloomberg Market Concepts (BMC) - Financial Markets Certification",
+      period: "2019",
+      provider: "Bloomberg for Education",
+      details: "12 horas",
+    },
+    {
+      title: "Formación Financiera y Mercados Bursátiles",
+      period: "2011 / 2012",
+      provider:
+        "Euskal Herriko Unibertsitatea (UPV/EHU) - Jose Antonio Marañon",
+      details: "30 horas",
+    },
+    {
+      title: "Intensivo de Inversión Tortugas Hispánicas",
+      period: "2011",
+      provider: "José Antonio Madrigal",
+      details: "36 horas",
+    },
   ];
 
   return (
     <section className="studies-section">
       <h1 className="section-title">
         <FaGraduationCap />
-        Education
+        Educación
       </h1>
 
       <div className="education-grid">
         {education.map((edu, index) => (
           <div key={index} className="education-card">
             <div className="education-image-container">
-              <img 
-                src={edu.image} 
-                alt={edu.university} 
+              <img
+                src={edu.image}
+                alt={edu.university}
                 className="education-image"
                 loading="lazy"
               />
@@ -95,15 +117,19 @@ const Studies = () => {
       </div>
 
       <div className="training-section">
-        <h2 className="category-title">Additional Training</h2>
+        <h2 className="category-title">Cursos adicionales</h2>
         <div className="studies-grid">
           {training.map((study, index) => (
-            <article key={index} className="study-card training-card"> {/* Added specific class */}
+            <article key={index} className="study-card training-card">
+              {" "}
+              {/* Added specific class */}
               <div className="study-content">
                 <h3 className="study-title">{study.title}</h3>
                 <p className="study-subtitle">{study.period}</p>
                 <p className="study-description">{study.provider}</p>
-                {study.details && <p className="study-details">{study.details}</p>}
+                {study.details && (
+                  <p className="study-details">{study.details}</p>
+                )}
               </div>
             </article>
           ))}
