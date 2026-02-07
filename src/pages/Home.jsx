@@ -13,22 +13,26 @@ const Home = () => {
           <p>
             ¡Hola! Soy un emprendedor, deportista y amante de los viajes que ha
             explorado distintos caminos, lo que me ha dado una visión amplia del
-            mundo y de cómo se hacen los negocios en contextos diversos. ​
+            mundo y de cómo se hacen los negocios en contextos diversos.
           </p>
           <p>
-            Nunca he creído en encasillarme en una sola especialización,
-            encambio entender un poco de todo es clave para tener más
-            herramientas y tomar mejores decisiones en un mundo tan cambiante.
-            En esta última etapa estoy centrado en el desarrollo de negocio, la
-            internacionalización y la tecnología, buscando siempre ideas que
-            impulsen el cambio en nuestra industria.
+            Mi recorrido comenzó en África, una experiencia que despertó mi
+            curiosidad por escuchar a las personas y por el valor de construir
+            proyectos compartidos. Más adelante, pasé más de cinco años en áreas
+            financieras, desarrollando una mentalidad analítica y estratégica
+            que marcó mi manera de entender el negocio y generar crecimiento
+            sostenible.
           </p>
           <p>
-            Busco formar parte de una pequeña o mediana empresa en Bilbao con
-            planes de internacionalización, que valore una visión global,
-            digital y orientada a las personas para afrontar sus retos
-            comerciales y estratégicos.
+            Con el tiempo, trabajar en varios países y equipos fortaleció mi
+            capacidad de adaptación, mi sentido de prioridad y una visión de
+            conjunto que aplico ante cualquier reto.
           </p>
+          <p>
+            En mi día a día practico alpinismo, meditación y me mantengo al
+            tanto de las herramientas tecnológicas y literarias que impulsan el
+            aprendizaje continuo.
+          </p>º
           {/* Si quieres dejar aquí un cv en inglés pero no de */}
           {/* <div className="cv-buttons">
             <a href="./pdfs/english.pdf" className="cv-button" target="_blank" rel="noopener noreferrer">
