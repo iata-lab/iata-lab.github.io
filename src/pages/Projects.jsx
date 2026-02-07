@@ -53,7 +53,7 @@ const Projects = () => {
                 {project.year && <p className="project-year">{project.year}</p>}
                 <p className="project-description">{project.description}</p>
               </div>
-            </div>Fmerc
+            </div>
           ))}
         </div>
       </article>
