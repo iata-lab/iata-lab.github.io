@@ -16,23 +16,26 @@ const Home = () => {
             mundo y de cómo se hacen los negocios en contextos diversos.
           </p>
           <p>
-            Mi recorrido comenzó en África, una experiencia que despertó mi
-            curiosidad por escuchar a las personas y por el valor de construir
-            proyectos compartidos. Más adelante, pasé más de cinco años en áreas
-            financieras, desarrollando una mentalidad analítica y estratégica
-            que marcó mi manera de entender el negocio y generar crecimiento
-            sostenible.
+            He trabajado en el ámbito público internacional con el Programa de
+            las Naciones Unidas en Chile, y también en la Banca de Inversión y
+            la industria automovilística, donde desarolle una mentalidad
+            analítica y una visión estratégica transversal que marcan mi forma
+            de entender las realidades humanas y empresariales.
           </p>
           <p>
-            Con el tiempo, trabajar en varios países y equipos fortaleció mi
-            capacidad de adaptación, mi sentido de prioridad y una visión de
-            conjunto que aplico ante cualquier reto.
+            Mi impulso por viajar me llevo a recorrer distintas regiones del
+            mundo desde zonas rurales en Africa hasta más receintemente en
+            Alemania. En el camino, he aprendido que moverme entre países y
+            desempeñar trabajos diversos me ha enseñado a adaptarme rápido,
+            priorizar con claridad y conectar con la realidad de muchas
+            personas.
           </p>
           <p>
-            En mi día a día practico alpinismo, meditación y me mantengo al
-            tanto de las herramientas tecnológicas y literarias que impulsan el
-            aprendizaje continuo.
-          </p>º
+            En mi día a día practico alpinismo y sigo aprendiendo sobre nuevas
+            tecnologías. Tras un periodo intenso de estudio en estadística y
+            economía en Bilbao, continúo formándome en lenguajes de programación
+            y en inteligencia artificial.
+          </p>
           {/* Si quieres dejar aquí un cv en inglés pero no de */}
           {/* <div className="cv-buttons">
             <a href="./pdfs/english.pdf" className="cv-button" target="_blank" rel="noopener noreferrer">
