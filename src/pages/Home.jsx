@@ -14,12 +14,29 @@ const Home = () => {
             Hello! I'm a passionate technologist with a unique blend of skills in Data Science, Geographic Information Systems (GIS), and Web Development. I thrive on analyzing data to uncover meaningful patterns and insights, which I then transform into practical and innovative solutions.
           </p>
           <p>
-            My journey into data analysis began with GIS and Remote Sensing, where I developed a strong foundation in interpreting and visualizing spatial data. This experience was further enriched through my deep dive into Data Science, equipping me with advanced tools and techniques for sophisticated analysis and predictive modeling. By combining these analytical skills with Web Development—particularly using JavaScript—I bring data-driven applications to life on the web.
+            He trabajado en el ámbito público internacional con el Programa de
+            las Naciones Unidas en Chile, y también en la Banca de Inversión y
+            la industria automovilística, donde desarolle una mentalidad
+            analítica y una visión estratégica transversal que marcan mi forma
+            de entender las realidades humanas y empresariales.
           </p>
           <p>
-            What truly excites me is building interactive web applications that harness the power of data science to explore and present geographic information. I'm driven to create engaging tools that help organizations gain deeper insights, make informed decisions, and solve real-world challenges effectively.
+            Mi impulso por viajar me llevo a recorrer distintas regiones del
+            mundo desde zonas rurales en África hasta más receientemente en
+            Alemania. En el camino, he aprendido que moverme entre países y
+            desempeñar trabajos diversos me ha enseñado a adaptarme rápido,
+            priorizar con claridad y conectar con la realidad de muchas
+            personas.
           </p>
-          <div className="cv-buttons">
+          <p>
+            En mi día a día practico alpinismo y sigo aprendiendo sobre nuevas
+            tecnologías. Tras un periodo intenso de estudio en estadística y
+            economía en Bilbao, continúo formándome en lenguajes de programación
+            y en inteligencia artificial.
+          </p>
+
+          {/* Si quieres dejar aquí un cv en inglés pero no de */}
+          {/* <div className="cv-buttons">
             <a href="./pdfs/english.pdf" className="cv-button" target="_blank" rel="noopener noreferrer">
               English Curriculum
             </a>

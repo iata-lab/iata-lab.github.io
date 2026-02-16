@@ -9,12 +9,6 @@ import isfahanTechImg from '../assets/img/isfahan-tech.jpg';
 const Studies = () => {
   const education = [
     {
-      degree: "Master's Degree in Geographic Information Systems and Remote Sensing",
-      year: "2004",
-      university: "Shahid Beheshti University, Tehran, Iran",
-      image: shahidBeheshtiImg
-    },
-    {
       degree: "Bachelor of Engineering in Rangeland and Watershed Management",
       year: "2000",
       university: "Isfahan University of Technology, Iran",
