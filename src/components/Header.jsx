@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import LanguageSelector from './LanguageSelector';
 import './Header.css';
 
 const Header = () => {
@@ -16,7 +15,6 @@ const Header = () => {
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
-        <LanguageSelector />
       </div>
     </header>
   );

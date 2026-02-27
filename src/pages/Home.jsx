@@ -43,7 +43,7 @@ const Home = () => {
             <a href="./pdfs/spanish.pdf" className="cv-button" target="_blank" rel="noopener noreferrer">
               Spanish Curriculum
             </a>
-          </div>
+          </div> */}
         </div>
       </article>
     </section>

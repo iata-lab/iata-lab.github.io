@@ -6,21 +6,29 @@ const ThemeToggle = () => {
 
   useEffect(() => {
     // Check for saved theme preference
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      setIsDark(true);
-      document.documentElement.setAttribute('data-theme', 'dark');
+    try {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        setIsDark(true);
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch (err) {
+      console.warn('Could not read theme preference from localStorage:', err);
     }
   }, []);
 
   const toggleTheme = () => {
-    setIsDark(!isDark);
-    if (!isDark) {
+    const newIsDark = !isDark;
+    setIsDark(newIsDark);
+    if (newIsDark) {
       document.documentElement.setAttribute('data-theme', 'dark');
-      localStorage.setItem('theme', 'dark');
     } else {
       document.documentElement.removeAttribute('data-theme');
-      localStorage.setItem('theme', 'light');
+    }
+    try {
+      localStorage.setItem('theme', newIsDark ? 'dark' : 'light');
+    } catch (err) {
+      console.warn('Could not save theme preference to localStorage:', err);
     }
   };
 

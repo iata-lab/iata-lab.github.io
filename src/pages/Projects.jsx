@@ -41,12 +41,14 @@ const Projects = () => {
               style={{ cursor: "pointer" }}
             >
               <div className="project-image-container">
-                <img
-                  src={project.images[0]}
-                  alt={project.title}
-                  className="project-image"
-                  loading="lazy"
-                />
+                {project.images && project.images.length > 0 && (
+                  <img
+                    src={project.images[0]}
+                    alt={project.title}
+                    className="project-image"
+                    loading="lazy"
+                  />
+                )}
               </div>
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
@@ -72,12 +74,14 @@ const Projects = () => {
               style={{ cursor: "pointer" }}
             >
               <div className="project-image-container">
-                <img
-                  src={project.images[0]}
-                  alt={project.title}
-                  className="project-image"
-                  loading="lazy"
-                />
+                {project.images && project.images.length > 0 && (
+                  <img
+                    src={project.images[0]}
+                    alt={project.title}
+                    className="project-image"
+                    loading="lazy"
+                  />
+                )}
               </div>
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>

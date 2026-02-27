@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
-import { FaEnvelope, FaUser, FaPaperPlane, FaPhone, FaWhatsapp, FaCopy, FaCheck } from 'react-icons/fa';
+import { FaEnvelope, FaUser, FaPaperPlane, FaWhatsapp, FaCopy, FaCheck, FaTimes } from 'react-icons/fa';
 import './Contact.css';
 
 
 const Contact = () => {
   const [copied, setCopied] = useState(false);
+  const [copyError, setCopyError] = useState(false);
   const email = 'ghaziaskari@gmail.com';
 
   const handleCopyEmail = async () => {
     try {
       await navigator.clipboard.writeText(email);
       setCopied(true);
+      setCopyError(false);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       console.error('Failed to copy email:', err);
+      setCopyError(true);
+      setTimeout(() => setCopyError(false), 3000);
     }
   };
 
@@ -46,13 +50,24 @@ const Contact = () => {
             <div className="contact-item">
               <FaEnvelope />
               <button 
-                className="email-copy" 
+                className={`email-copy${copyError ? ' email-copy--error' : ''}`}
                 onClick={handleCopyEmail}
                 title="Click to copy email"
               >
                 {email}
-                {copied ? <FaCheck className="copy-icon" /> : <FaCopy className="copy-icon" />}
+                {copied ? (
+                  <FaCheck className="copy-icon" />
+                ) : copyError ? (
+                  <FaTimes className="copy-icon" />
+                ) : (
+                  <FaCopy className="copy-icon" />
+                )}
               </button>
+              {copyError && (
+                <p className="copy-error-message">
+                  No se pudo copiar. Por favor, copia el email manualmente.
+                </p>
+              )}
             </div>
           </div>
           <p>You can also copy the email above and contact me directly!</p>

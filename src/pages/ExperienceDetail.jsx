@@ -2,14 +2,14 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 import { gisExperience, teachingExperience } from "../data/projectsData";
-import "./ProjectDetailExample.css";
+import "./ProjectDetail.css";
 
 const ExperienceDetail = () => {
-  const { type, experienceId } = useParams();
+  const { type, id } = useParams();
 
   // Determine which data source to use based on URL type
   const dataSource = type === "teaching" ? teachingExperience : gisExperience;
-  const experience = dataSource.find((exp) => exp.id === experienceId);
+  const experience = dataSource.find((exp) => exp.id === id);
 
   if (!experience) {
     return (
