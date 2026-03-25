@@ -20,11 +20,11 @@ const Home = () => {
             He trabajado en el Programa de las Naciones Unidas en Chile, en
             Banca de Inversión y también en la industria automovilística, donde
             desarolle una mentalidad analítica y una visión estratégica
-            transversal que marcan mi forma de entender la realidad empresarial.
+            transversal que marcan mi forma de entender el entorno empresarial.
           </p>
           <p>
             Mi impulso por viajar me llevo a recorrer distintas regiones del
-            mundo desde zonas rurales en Africa hasta más recientemente en los paises escandinavos. En el camino, he aprendido que moverme entre países y
+            mundo desde zonas rurales de Africa hasta más recientemente los paises escandinavos. En el camino, he aprendido que moverme entre países y
             desempeñar trabajos diversos me ha enseñado a adaptarme rápido,
             priorizar con claridad y conectar con la realidad de muchas
             personas.
