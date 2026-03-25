@@ -24,8 +24,7 @@ const Home = () => {
           </p>
           <p>
             Mi impulso por viajar me llevo a recorrer distintas regiones del
-            mundo desde zonas rurales en Africa hasta más receintemente el norte
-            de Noruega. En el camino, he aprendido que moverme entre países y
+            mundo desde zonas rurales en Africa hasta más recientemente en los paises escandinavos. En el camino, he aprendido que moverme entre países y
             desempeñar trabajos diversos me ha enseñado a adaptarme rápido,
             priorizar con claridad y conectar con la realidad de muchas
             personas.
