@@ -41,12 +41,12 @@ export const allProjects = {
     title: "Operario - Holmøy Maritime AS",
     year: "2024 - 2025",
     description:
-      "Operario producción en la industria pesquera de Noruega (Bergen e Islas Lofoten). Esta etapa fue un recurso personal para conseguir dinero para la adquisición de una empresariales así como el perfeccionamiento del inglés.",
+      "Trabajé como operario de producción en la industria pesquera de Noruega (Bergen y las Islas Lofoten). Realicé esta actividad con el objetivo de generar los fondos necesarios para la futura adquisición de una empresa.",
     images: [holmoyLogoImg],
     details: {
       technologies: [
         "Inglés Profesional (Full Immersion)",
-        "Gestión de Procesos Industriales",
+        "Procesos Industriales",
       ],
       features: [
         "Desempeño en entornos de alta presión y condiciones climáticas extremas",
